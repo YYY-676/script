@@ -1,5 +1,5 @@
 # script  --   python 脚本工具
-Useful Python scripts for enhancing software &amp;website usability. 
+My Python scripts for enhancing software & website usability.  自用日常脚本库
 
 ---
 
