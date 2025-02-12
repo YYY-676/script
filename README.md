@@ -13,7 +13,7 @@ Useful Python scripts for enhancing software &amp;website usability.
 
 ## 使用方法
 1. **启动脚本**：
-   - 双击 `run_autoclick.bat` 文件来启动应用程序。
+   - 双击 `run_autoclick.bat` 文件来启动应用程序(autoclick.py)。
 
 2. **开启键盘热键监听**：
    - 点击“start”按钮，应用程序将开始监听热键 F6 和 F7。
@@ -39,7 +39,7 @@ Ensure you have the following Python libraries installed:
 - `keyboard`
 ## Usage
 1. **Start the Script**:
-   - Double-click the `run_autoclick.bat` file to start the application.
+   - Double-click the `run_autoclick.bat` file to start the application(autoclick.py).
 
 2. **Start Listening**:
    - Click the "start" button, the application will start listening to hotkeys F6 and F7.
