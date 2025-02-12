@@ -1,5 +1,4 @@
-
- #!/usr/bin/env python3
+#!/usr/bin/env python3
 import sys
 import pyautogui
 import time
@@ -16,7 +15,7 @@ class KeyPressThread(QThread):
     def run(self):
         self.running = True
 
-        # 使用 Alt+Tab 切回原窗口
+        # 使用 Alt+Tab 切回原窗口 / Switch back to the original window using Alt+Tab
         pyautogui.keyDown('alt')
         pyautogui.press('tab')
         pyautogui.keyUp('alt')
@@ -38,13 +37,16 @@ class App(QWidget):
         self.thread = KeyPressThread()
 
     def initUI(self):
-        self.setWindowTitle("视频加速器")
-        self.setGeometry(100, 100, 200, 100)
+        self.setWindowTitle("视频加速器")  # Set window title
+        self.setWindowTitle("Video Accelerator")  # Set window title (English)
+        self.setGeometry(100, 100, 200, 100)  # Set window geometry
 
         self.start_button = QPushButton("开始加速", self)
+        self.start_button.setText("Start Acceleration")  # Set button text (English)
         self.start_button.clicked.connect(self.start_acceleration)
 
         self.stop_button = QPushButton("停止加速", self)
+        self.stop_button.setText("Stop Acceleration")  # Set button text (English)
         self.stop_button.clicked.connect(self.stop_acceleration)
 
         layout = QVBoxLayout()
