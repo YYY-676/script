@@ -14,10 +14,10 @@ class AutoClickerApp:
         self.listening = False  # 控制键盘监听
 
         # 创建 UI 组件
-        self.btn_start_listen = tk.Button(root, text="开启监听", command=self.start_listening)
+        self.btn_start_listen = tk.Button(root, text="start", command=self.start_listening)
         self.btn_start_listen.pack(pady=20)
 
-        self.btn_stop_listen = tk.Button(root, text="关闭监听", command=self.stop_listening, state="disabled")
+        self.btn_stop_listen = tk.Button(root, text="pause", command=self.stop_listening, state="disabled")
         self.btn_stop_listen.pack(pady=5)
 
         self.check_input_thread = threading.Thread(target=self.check_input)
